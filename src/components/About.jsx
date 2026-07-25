@@ -10,7 +10,7 @@ export default function About() {
 
                     <div className='flex flex-row md:flex-row items-center justify-center md:justify-between gap-10 md:gap-16 lg:gap-15 w-full px-12 md:px-0 my-auto'>
                        
-                        <div className='w-60 h-80 sm:w-72 sm:h-100 md:w-80 md:h-110 shrink-0 overflow-hidden rounded-full shadow-2xl border-4 border-[#e1c8e9] '>
+                        <div className='w-60 h-80 sm:w-72 sm:h-80 md:w-70 md:h-110 shrink-0 overflow-hidden rounded-full shadow-2xl border-4 border-[#e1c8e9] '>
                         <img src="./assets/images/samsom.jpeg" className='w-full h-full object-cover z-9' style={{ borderRadius: '70% / 50%' }} />
                         </div>
 

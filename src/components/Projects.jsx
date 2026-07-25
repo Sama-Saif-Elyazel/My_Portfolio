@@ -3,7 +3,7 @@ import React from 'react'
 export default function Projects() {
   return (
     <>
-      <div className='bg-[#ecd7ef] h-screen flex items-center justify-center scroll-mt-24' id='projects'>
+      <div className='bg-[#ecd7ef] h-screen flex items-center justify-center scroll-mt-24 pt-24' id='projects'>
         {/* <img src="./assets/images/background.jpeg" className=' w-full h-full object-cover' /> */}
         <div className='absolute flex flex-col items-center justify-center gap-10 p-20'>
           <h1 className='text-6xl font-bold text-[#4c0a5e] font-[cursive]'>Projects</h1>

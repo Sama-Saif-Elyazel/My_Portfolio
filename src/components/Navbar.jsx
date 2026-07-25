@@ -1,37 +1,65 @@
 import React, { useState } from 'react'
 
 export default function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    return (
-        <>
-            <div className='fixed top-0 left-0 right-0 bg-[#4c0a5e] h-25 w-full flex items-center justify-between px-2 z-50 gap-6'>
-                <div>
-                    <h1 className='text-2xl font-bold text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer whitespace-nowrap'>Sama Saif Elyazel</h1>
-                </div>
-                <div className='text-xl gap-5 hidden md:flex overflow-x-hidden max-w-full'>
-                    <a href="#home" className='text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer'>Home</a>
-                    <a href="#about" className='text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer'>About Me</a>
-                    <a href="#skills" className='text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer'>Skills</a>
-                    <a href="#projects" className='text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer'>Projects</a>
-                    <a href="#contact" className='text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer'>Contact</a>
-                    <a href="#certificates" className='text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer'>Certificates</a>
-                </div>
-                <button className='fixed right-12 top-10 md:hidden text-[#db76ea] font-[cursive] hover:text-[#e7cae8] hover:cursor-pointer' onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle Menu">
-                    {isMenuOpen ? 'Close' : 'Menu'}
-                </button>
+  const navLinks = [
+    { name: 'Home', href: '#home' },
+    { name: 'About Me', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
+    { name: 'Certificates', href: '#certificates' },
+  ]
 
-                {isMenuOpen && (
-                    <div className='fixed right-5 top-25 z-50 md:hidden bg-[#4c0a5e] text-[#db76ea] font-[cursive] flex flex-col items-center gap-4 py-4 overflow-x-hidden max-w-full'>
-                        <a href="#home" onClick={() => setIsMenuOpen(false)} className='hover:text-[#e7cae8] hover:cursor-pointer'>Home</a>
-                        <a href="#about" onClick={() => setIsMenuOpen(false)} className='hover:text-[#e7cae8] hover:cursor-pointer'>About Me</a>
-                        <a href="#skills" onClick={() => setIsMenuOpen(false)} className='hover:text-[#e7cae8] hover:cursor-pointer'>Skills</a>
-                        <a href="#projects" onClick={() => setIsMenuOpen(false)} className='hover:text-[#e7cae8] hover:cursor-pointer'>Projects</a>
-                        <a href="#contact" onClick={() => setIsMenuOpen(false)} className='hover:text-[#e7cae8] hover:cursor-pointer'>Contact</a>
-                        <a href="#certificates" onClick={() => setIsMenuOpen(false)} className='hover:text-[#e7cae8] hover:cursor-pointer'>Certificates</a>
-                    </div>
-                )}
-            </div>
-        </>
-    )
+  return (
+    <nav className='fixed top-4 inset-x-0 z-50 w-[92%] max-w-6xl mx-auto'>
+      <div className='bg-[#4c0a5e]/80 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-4 flex items-center justify-between shadow-2xl transition-all duration-300'>
+        
+        {/* اللوجو / الاسم */}
+        <a href="#home" className='text-2xl sm:text-3xl font-bold text-[#db76ea] font-[cursive] hover:text-white transition-colors'>
+          Sama Saif Elyazel
+        </a>
+
+        {/* روابط الكمبيوتر (Desktop Menu) */}
+        <div className='hidden md:flex items-center gap-6'>
+          {navLinks.map((link, idx) => (
+            <a 
+              key={idx} 
+              href={link.href} 
+              className='text-white/90 hover:text-[#db76ea] font-[cursive] font-medium transition-all hover:scale-105'
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+
+        {/* زرار الموبايل (Mobile Hamburger Button) */}
+        <button 
+          className='md:hidden text-[#db76ea] hover:text-white p-2 rounded-xl bg-white/10 border border-white/20 focus:outline-none'
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle Menu"
+        >
+          {isMenuOpen ? '✖' : '☰'}
+        </button>
+
+      </div>
+
+      {/* قائمة الموبايل عند الفتح */}
+      {isMenuOpen && (
+        <div className='md:hidden mt-3 bg-[#4c0a5e]/95 backdrop-blur-lg border border-white/20 rounded-2xl p-6 flex flex-col items-center gap-4 shadow-2xl transition-all animate-fadeIn'>
+          {navLinks.map((link, idx) => (
+            <a 
+              key={idx} 
+              href={link.href} 
+              onClick={() => setIsMenuOpen(false)}
+              className='text-white font-[cursive] text-lg hover:text-[#db76ea] transition-colors'
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+      )}
+    </nav>
+  )
 }

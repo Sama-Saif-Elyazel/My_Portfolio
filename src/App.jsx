@@ -14,19 +14,19 @@ function App() {
 
   return (
     <>
-    <div className='overflow-x-hidden max-w-full'>
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Certificates />
-      {/* <ImageSlider /> */}
+      <div className='overflow-x-hidden max-w-full'>
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Certificates />
+        <Contact />
+        {/* <ImageSlider /> */}
       </div>
 
-      
-        {/* <Routes>
+
+      {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />

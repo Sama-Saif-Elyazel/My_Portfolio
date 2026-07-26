@@ -1,38 +1,100 @@
 import React from 'react'
-import { FaFacebook, FaLinkedin } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaSpotify } from "react-icons/fa"
-import { FaYoutube } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 
 export default function Contact() {
+  const socialLinks = [
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/sama-saif-356ba241b?utm_source=share_via&utm_content=profile&utm_medium=member_android", name: "LinkedIn", color: "hover:text-[#0a66c2]" },
+    { icon: <FaGithub />, url: "https://github.com/Sama-Saif-Elyazel", name: "GitHub", color: "hover:text-black" },
+    { icon: <FaInstagram />, url: "https://www.instagram.com/sama_saif826?igsh=MWdqNmk4NWV6bWVkdw==", name: "Instagram", color: "hover:text-[#e4405f]" },
+    { icon: <FaFacebook />, url: "https://www.facebook.com/semsma.ana.39/", name: "Facebook", color: "hover:text-[#1877f2]" }
+  ]
+
   return (
-    <>
-      <div className='bg-[#ecd7ef] h-screen flex items-center justify-center scroll-mt-24' id='contact'>
-        {/* <img src="./assets/images/background.jpeg" className=' w-full h-full object-cover' /> */}
-        <div className='absolute flex flex-col items-center justify-center gap-10 p-20'>
-          <h1 className='text-6xl font-bold text-[#4c0a5e] font-[cursive]'>Contact</h1>
-          <div className='flex flex-row gap-40 p-20'>
-            <div className='flex flex-col justify-center items-center gap-5'>
-              <h1 className='text-4xl font-bold text-[#4c0a5e] font-[cursive]'>Email</h1>
-              <p className='text-2xl text-[#4c0a5e] font-[cursive]'>sama.elyazel@gmail.com</p>
-            </div>
-            <div className='flex flex-col justify-center items-center gap-5'>
-              <h1 className='text-4xl font-bold text-[#4c0a5e] font-[cursive]'>Phone</h1>
-              <p className='text-2xl text-[#4c0a5e] font-[cursive]'>01127836069</p>
-            </div> 
-            <div>
-              <h1 className='text-4xl font-bold text-[#4c0a5e] font-[cursive]'>Social Media</h1>
-              <div className='flex flex-row gap-5 mt-5'>
-                <a href="https://www.facebook.com/semsma.ana.39/" target="_blank" rel="noopener noreferrer"><FaFacebook className='w-8 h-8 text-[#4c0a5e] hover:text-blue-900 hover:cursor-pointer' /></a>
-                <a href="https://www.instagram.com/sama_saif826?igsh=MWdqNmk4NWV6bWVkdw==" target="_blank" rel="noopener noreferrer"><FaInstagram className='w-8 h-8 text-[#4c0a5e] hover:text-pink-900 hover:cursor-pointer ml-5' /></a>
-                <a href="https://www.linkedin.com/in/sama-saif-356ba241b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"><FaLinkedin className='w-8 h-8 text-[#4c0a5e] hover:text-blue-900 hover:cursor-pointer ml-5' /></a>
-                <a href="https://github.com/Sama-Saif-Elyazel" target="_blank" rel="noopener noreferrer"><FaGithub className='w-8 h-8 text-[#4c0a5e] hover:text-gray-900 hover:cursor-pointer ml-5' /></a>
+    <section id='contact' className='bg-[#ecd7ef] min-h-screen py-24 px-6 flex items-center justify-center scroll-mt-24'>
+      <div className='w-full max-w-4xl mx-auto flex flex-col items-center gap-10'>
+        
+        {/* Title */}
+        <div className='text-center flex flex-col items-center gap-2'>
+          <span className='bg-[#4c0a5e] text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full shadow-md'>
+            Let's Connect 🤝
+          </span>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-[#4c0a5e] font-[cursive] drop-shadow-md'>
+            Get In Touch
+          </h1>
+        </div>
+
+        {/* Glass Card Container */}
+        <div className='w-full bg-white/40 backdrop-blur-md border border-white/60 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-10 hover:shadow-[#4c0a5e]/15 transition-all duration-500'>
+          
+          {/* Contact Details (Email & Phone) */}
+          <div className='flex flex-col gap-6 w-full md:w-1/2'>
+            
+            {/* Email Card */}
+            <a 
+              href="mailto:sama.elyazel@gmail.com" 
+              className='flex items-center gap-4 p-4 rounded-2xl bg-white/60 border border-white/80 shadow-sm hover:shadow-md hover:scale-102 hover:bg-[#4c0a5e] hover:text-white transition-all duration-300 group'
+            >
+              <div className='p-3.5 bg-[#4c0a5e]/10 rounded-xl text-[#4c0a5e] group-hover:bg-white/20 group-hover:text-white transition-colors text-2xl'>
+                <FaEnvelope />
               </div>
+              <div className='flex flex-col'>
+                <span className='text-xs font-semibold text-[#4c0a5e]/70 group-hover:text-white/80'>Email Me</span>
+                <span className='text-sm sm:text-base font-bold text-[#4c0a5e] group-hover:text-white font-[cursive] break-all'>
+                  sama.elyazel@gmail.com
+                </span>
+              </div>
+            </a>
+
+            {/* Phone Card */}
+            <a 
+              href="tel:01127836069" 
+              className='flex items-center gap-4 p-4 rounded-2xl bg-white/60 border border-white/80 shadow-sm hover:shadow-md hover:scale-102 hover:bg-[#4c0a5e] hover:text-white transition-all duration-300 group'
+            >
+              <div className='p-3.5 bg-[#4c0a5e]/10 rounded-xl text-[#4c0a5e] group-hover:bg-white/20 group-hover:text-white transition-colors text-2xl'>
+                <FaPhoneAlt />
+              </div>
+              <div className='flex flex-col'>
+                <span className='text-xs font-semibold text-[#4c0a5e]/70 group-hover:text-white/80'>Call / WhatsApp</span>
+                <span className='text-base font-bold text-[#4c0a5e] group-hover:text-white font-[cursive]'>
+                  01127836069
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          {/* Vertical Divider for Desktop */}
+          <div className='hidden md:block w-px h-48 bg-[#4c0a5e]/15'></div>
+
+          {/* Social Links Section */}
+          <div className='flex flex-col items-center text-center gap-6 w-full md:w-1/2'>
+            <h2 className='text-2xl font-bold text-[#4c0a5e] font-[cursive]'>
+              Follow & Connect
+            </h2>
+            <p className='text-sm text-[#4c0a5e]/80 font-medium max-w-xs'>
+              Feel free to reach out through any of these platforms!
+            </p>
+
+            {/* Social Icons Grid */}
+            <div className='flex flex-wrap justify-center gap-4 pt-2'>
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label={social.name}
+                  className={`p-4 bg-white/70 border border-white rounded-2xl text-2xl text-[#4c0a5e] shadow-sm hover:scale-115 hover:-translate-y-1 hover:shadow-lg ${social.color} transition-all duration-300`}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
+
         </div>
+
       </div>
-    </>
+    </section>
   )
 }

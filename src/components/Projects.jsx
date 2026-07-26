@@ -8,7 +8,8 @@ export default function Projects() {
       description: 'A modern, fully responsive personal portfolio website built with React and Tailwind CSS. Features interactive glassmorphism UI cards and dynamic section scrolling.',
       tags: ['React.js', 'Tailwind CSS', 'JavaScript'],
       image: './assets/images/portfolio.png',
-      githubLink: 'https://sama-saif-elyazel.github.io/My_Portfolio/'
+      githubLink: 'https://sama-saif-elyazel.github.io/My_Portfolio/',
+      demoLink: 'https://sama-saif-elyazel.github.io/My_Portfolio/'
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ export default function Projects() {
       description: 'A dynamic movie web application built with React.js that allows users to browse trending movies, search titles, and explore cast details.',
       tags: ['React.js', 'Tailwind CSS', 'REST API'],
       image: './assets/images/Movies.png', 
-      githubLink: 'https://sama-saif-elyazel.github.io/Movies/'
+      githubLink: 'https://sama-saif-elyazel.github.io/Movies/',
+      demoLink: 'https://sama-saif-elyazel.github.io/Movies/'
     },
     {
       id: 3,
@@ -24,7 +26,8 @@ export default function Projects() {
       description: 'A data analysis project analyzing global COVID-19 trends using Excel for cleaning and Power BI for interactive dashboard visualization.',
       tags: ['Power BI', 'Excel', 'Data Visualization'],
       image: './assets/images/dashboard.png', 
-      githubLink: 'https://app.powerbi.com/view?r=eyJrIjoiNjVhOWRjNjktOGFiOC00YmU4LThiOWMtYTgxYmY3MDI1MDJkIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
+      githubLink: 'https://app.powerbi.com/view?r=eyJrIjoiNjVhOWRjNjktOGFiOC00YmU4LThiOWMtYTgxYmY3MDI1MDJkIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9',
+      demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiNjVhOWRjNjktOGFiOC00YmU4LThiOWMtYTgxYmY3MDI1MDJkIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
     },
     {
       id: 4,
@@ -32,7 +35,8 @@ export default function Projects() {
       description: 'A console-based shopping cart application written in Python featuring item addition, total bill calculation, discounts, and inventory management.',
       tags: ['Python', 'OOP', 'Data Structures'],
       image: './assets/images/python.png', 
-      githubLink: '#'
+      githubLink: '#',
+      demoLink: '#'
     }
   ]
 
@@ -89,15 +93,23 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className='flex items-center w-auto gap-2 pt-3 border-t border-[#4c0a5e]/15'>
+                <div className='flex items-center gap-2 pt-3 border-t border-[#4c0a5e]/15'>
                   <a 
                     href={project.demoLink} 
                     target='_blank' 
                     rel='noreferrer'
-                    className='flex-1 w-auto text-center py-2 px-3 rounded-xl bg-[#4c0a5e] text-white text-xs font-bold font-[cursive] hover:bg-[#db76ea] hover:text-[#4c0a5e] transition-all duration-300 shadow-md'
+                    className='flex-1 text-center py-2 px-3 rounded-xl bg-[#4c0a5e] text-white text-xs font-bold font-[cursive] hover:bg-[#db76ea] hover:text-[#4c0a5e] transition-all duration-300 shadow-md'
                   >
                     View Project
                   </a>
+                  {/* <a 
+                    href={project.githubLink} 
+                    target='_blank' 
+                    rel='noreferrer'
+                    className='flex-1 text-center py-2 px-3 rounded-xl border-2 border-[#4c0a5e] text-[#4c0a5e] text-xs font-bold font-[cursive] hover:bg-[#4c0a5e] hover:text-white transition-all duration-300'
+                  >
+                    GitHub
+                  </a> */}
                 </div>
               </div>
 

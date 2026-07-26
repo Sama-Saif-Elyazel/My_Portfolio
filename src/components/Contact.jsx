@@ -29,7 +29,6 @@ export default function Contact() {
           
           <div className='flex flex-col gap-6 w-full md:w-1/2'>
             
-            {/* زر الإيميل المعدل */}
             <a 
               href={gmailWebUrl} 
               target='_blank'
@@ -47,7 +46,6 @@ export default function Contact() {
               </div>
             </a>
 
-            {/* زر الواتساب المعدل بالكود الدولي */}
             <a 
               href="https://wa.me/201127836069" 
               target='_blank'

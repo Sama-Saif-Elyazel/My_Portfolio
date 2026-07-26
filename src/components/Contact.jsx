@@ -1,19 +1,21 @@
 import React from 'react'
-import { FaFacebook, FaLinkedin, FaInstagram, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaInstagram, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 
 export default function Contact() {
   const socialLinks = [
-    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/sama-saif-356ba241b?utm_source=share_via&utm_content=profile&utm_medium=member_android", name: "LinkedIn", color: "hover:text-[#0a66c2]" },
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/sama-saif-elyazel-356ba241b", name: "LinkedIn", color: "hover:text-[#0a66c2]" },
     { icon: <FaGithub />, url: "https://github.com/Sama-Saif-Elyazel", name: "GitHub", color: "hover:text-black" },
     { icon: <FaInstagram />, url: "https://www.instagram.com/sama_saif826?igsh=MWdqNmk4NWV6bWVkdw==", name: "Instagram", color: "hover:text-[#e4405f]" },
     { icon: <FaFacebook />, url: "https://www.facebook.com/semsma.ana.39/", name: "Facebook", color: "hover:text-[#1877f2]" }
   ]
 
+  // رابط Gmail مباشر بيفتح الصفحة جاهزة لكتابة الإيميل
+  const gmailWebUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=sama.elyazel@gmail.com";
+
   return (
     <section id='contact' className='bg-[#ecd7ef] min-h-screen py-24 px-6 flex items-center justify-center scroll-mt-24'>
       <div className='w-full max-w-4xl mx-auto flex flex-col items-center gap-10'>
         
-        {/* Title */}
         <div className='text-center flex flex-col items-center gap-2'>
           <span className='bg-[#4c0a5e] text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full shadow-md'>
             Let's Connect 🤝
@@ -23,15 +25,15 @@ export default function Contact() {
           </h1>
         </div>
 
-        {/* Glass Card Container */}
         <div className='w-full bg-white/40 backdrop-blur-md border border-white/60 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-10 hover:shadow-[#4c0a5e]/15 transition-all duration-500'>
           
-          {/* Contact Details (Email & Phone) */}
           <div className='flex flex-col gap-6 w-full md:w-1/2'>
             
-            {/* Email Card */}
+            {/* زر الإيميل المعدل */}
             <a 
-              href="mailto:sama.elyazel@gmail.com" 
+              href={gmailWebUrl} 
+              target='_blank'
+              rel='noopener noreferrer'
               className='flex items-center gap-4 p-4 rounded-2xl bg-white/60 border border-white/80 shadow-sm hover:shadow-md hover:scale-102 hover:bg-[#4c0a5e] hover:text-white transition-all duration-300 group'
             >
               <div className='p-3.5 bg-[#4c0a5e]/10 rounded-xl text-[#4c0a5e] group-hover:bg-white/20 group-hover:text-white transition-colors text-2xl'>
@@ -45,13 +47,15 @@ export default function Contact() {
               </div>
             </a>
 
-            {/* Phone Card */}
+            {/* زر الواتساب المعدل بالكود الدولي */}
             <a 
-              href="tel:01127836069" 
+              href="https://wa.me/201127836069" 
+              target='_blank'
+              rel='noopener noreferrer'
               className='flex items-center gap-4 p-4 rounded-2xl bg-white/60 border border-white/80 shadow-sm hover:shadow-md hover:scale-102 hover:bg-[#4c0a5e] hover:text-white transition-all duration-300 group'
             >
               <div className='p-3.5 bg-[#4c0a5e]/10 rounded-xl text-[#4c0a5e] group-hover:bg-white/20 group-hover:text-white transition-colors text-2xl'>
-                <FaPhoneAlt />
+                <FaWhatsapp />
               </div>
               <div className='flex flex-col'>
                 <span className='text-xs font-semibold text-[#4c0a5e]/70 group-hover:text-white/80'>Call / WhatsApp</span>
@@ -63,10 +67,8 @@ export default function Contact() {
 
           </div>
 
-          {/* Vertical Divider for Desktop */}
           <div className='hidden md:block w-px h-48 bg-[#4c0a5e]/15'></div>
 
-          {/* Social Links Section */}
           <div className='flex flex-col items-center text-center gap-6 w-full md:w-1/2'>
             <h2 className='text-2xl font-bold text-[#4c0a5e] font-[cursive]'>
               Follow & Connect
@@ -75,7 +77,6 @@ export default function Contact() {
               Feel free to reach out through any of these platforms!
             </p>
 
-            {/* Social Icons Grid */}
             <div className='flex flex-wrap justify-center gap-4 pt-2'>
               {socialLinks.map((social, index) => (
                 <a

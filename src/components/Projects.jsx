@@ -17,8 +17,8 @@ export default function Projects() {
       description: 'A dynamic movie web application built with React.js that allows users to browse trending movies, search titles, and explore cast details.',
       tags: ['React.js', 'Tailwind CSS', 'REST API'],
       image: './assets/images/Movies.png', 
-      githubLink: '#',
-      demoLink: '#'
+      githubLink: 'https://sama-saif-elyazel.github.io/Movies/',
+      demoLink: 'https://sama-saif-elyazel.github.io/Movies/'
     },
     {
       id: 3,

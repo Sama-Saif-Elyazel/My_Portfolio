@@ -48,7 +48,7 @@ export default function Home() {
               Contact Me 📩
             </a>
             <a 
-              href= "/CV.pdf"
+              href= "https://drive.google.com/file/d/18dgX0uKMu_jWfN8_TD-J-U7aGh08F64L/view?usp=sharing"
               download="Sama_Saif_Elyazel_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"

@@ -48,7 +48,10 @@ export default function Home() {
               Contact Me 📩
             </a>
             <a 
-              href="" 
+              href= "/CV.pdf"
+              download="Sama_Saif_Elyazel_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className='bg-[#9959aa] text-[#4c0a5e] font-bold font-[cursive] border-2 border-[#4c0a5e]/30 px-8 py-3.5 rounded-2xl shadow-md hover:bg-[#cf81e7] hover:text-white hover:-translate-y-1 transition-all duration-300'
             >
               Download CV 📄

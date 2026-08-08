@@ -31,6 +31,14 @@ export default function Projects() {
     },
     {
       id: 4,
+      title: 'Dark Dashboard about Coffee',
+      description: 'A data analysis project analyzing coffee shop sales data using Excel for cleaning and Power BI for interactive dashboard visualization.',
+      tags: ['Power BI', 'Excel', 'Data Visualization','Sales Analysis'],
+      image: './assets/images/Coffee2.png',
+      githubLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9',
+      demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
+    },    {
+      id: 5,
       title: 'Coffee Shop Sales Dashboard',
       description: 'A data analysis project analyzing coffee shop sales data using Excel for cleaning and Power BI for interactive dashboard visualization.',
       tags: ['Power BI', 'Excel', 'Data Visualization','Sales Analysis'],
@@ -39,7 +47,7 @@ export default function Projects() {
       demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Python Shopping Cart System',
       description: 'A console-based shopping cart application written in Python featuring item addition, total bill calculation, discounts, and inventory management.',
       tags: ['Python', 'OOP', 'Data Structures','Console Application'],

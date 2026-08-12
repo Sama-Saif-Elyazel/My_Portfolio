@@ -5,31 +5,46 @@ export default function Certificates() {
     {
       id: 1,
       title: "Web Development by React",
-      issuer: "Creativa Hub Aswan / TIEC",
+      issuer: "Eng. Ahmed Nady / Creativa Hub Aswan / TIEC",
       image: "./assets/images/slide1.jpeg",
       description: "Comprehensive training on modern web technologies including React and Tailwind."
     },
     {
       id: 2,
       title: "Web Development Fundamentals",
-      issuer: "Creativa Hub Aswan / TIEC",
+      issuer: "Eng. Ahmed Nady / Creativa Hub Aswan / TIEC",
       image: "./assets/images/slide3.jpeg",
       description: "Foundational certification covering semantic HTML5 structures and responsive web styling using CSS3."
     },
     {
       id: 3,
       title: "Programming with Python",
-      issuer: "Creativa Hub Aswan / TIEC",
+      issuer: "Eng. Abdelrahman Hany / Creativa Hub Aswan / TIEC",
       image: "./assets/images/slide2.jpeg",
       description: "Foundational programming principles, algorithms, and object-oriented structure."
     },
     {
       id: 4,
+      title: "Data Analysis Training",
+      issuer: "Dr. Mohamed Mahmoud (Data Analysis Instructor)",
+      image: "./assets/images/slide4.png",
+      description: "Successfully completed 84 hours of intensive Data Analysis training with an outstanding performance rate of 116%, featuring exceptional analytical skills and dedication."
+    },
+    {
+      id: 5,
       title: "Data Analysis & Visualization",
       issuer: "Power BI & Excel",
-      image: "./assets/images/",
+      image: "./assets/images/slide5.png",
       description: "Certification in data transformation, cleaning, and building interactive analytics dashboards."
     },
+    {
+      id: 6,
+      title: "SQL & Database Administration Training",
+      issuer: "Eng. mohamed Bastawi / Creativa Hub Aswan / TIEC",
+      image: "./assets/images/slide5.png",
+      description: "Proficient in writing complex SQL queries using JOINs, Aggregations, Subqueries, and Window Functions to extract, clean, and transform raw data into actionable business insights."
+    },
+
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -120,8 +135,8 @@ export default function Certificates() {
                 onClick={() => setCurrentIndex(index)}
                 aria-label={`Go to slide ${index + 1}`}
                 className={`transition-all duration-300 rounded-full ${currentIndex === index
-                    ? 'w-8 h-3 bg-[#4c0a5e] shadow-md'
-                    : 'w-3 h-3 bg-[#4c0a5e]/30 hover:bg-[#db76ea]'
+                  ? 'w-8 h-3 bg-[#4c0a5e] shadow-md'
+                  : 'w-3 h-3 bg-[#4c0a5e]/30 hover:bg-[#db76ea]'
                   }`}
               />
             ))}
@@ -134,8 +149,8 @@ export default function Certificates() {
                 key={cert.id}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-16 h-12 sm:w-20 sm:h-14 rounded-xl overflow-hidden cursor-pointer border-2 transition-all duration-300 shrink-0 ${currentIndex === index
-                    ? 'border-[#4c0a5e] scale-105 shadow-md ring-2 ring-[#db76ea]'
-                    : 'border-white/60 opacity-60 hover:opacity-100 hover:scale-100'
+                  ? 'border-[#4c0a5e] scale-105 shadow-md ring-2 ring-[#db76ea]'
+                  : 'border-white/60 opacity-60 hover:opacity-100 hover:scale-100'
                   }`}
               >
                 <img

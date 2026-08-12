@@ -8,7 +8,6 @@ export default function Projects() {
       description: 'A modern, fully responsive personal portfolio website built with React and Tailwind CSS. Features interactive glassmorphism UI cards and dynamic section scrolling.',
       tags: ['React.js', 'Tailwind CSS', 'JavaScript'],
       image: './assets/images/portfolio.png',
-      githubLink: 'https://sama-saif-elyazel.github.io/My_Portfolio/',
       demoLink: 'https://sama-saif-elyazel.github.io/My_Portfolio/'
     },
     {
@@ -17,7 +16,6 @@ export default function Projects() {
       description: 'A dynamic movie web application built with React.js that allows users to browse trending movies, search titles, and explore cast details.',
       tags: ['React.js', 'Tailwind CSS', 'REST API'],
       image: './assets/images/Movies.png',
-      githubLink: 'https://sama-saif-elyazel.github.io/Movies/',
       demoLink: 'https://sama-saif-elyazel.github.io/Movies/'
     },
     {
@@ -26,7 +24,6 @@ export default function Projects() {
       description: 'A data analysis project analyzing global COVID-19 trends using Excel for cleaning and Power BI for interactive dashboard visualization.',
       tags: ['Power BI', 'Excel', 'Data Visualization', 'Data Analysis'],
       image: './assets/images/dashboard.png',
-      githubLink: 'https://app.powerbi.com/view?r=eyJrIjoiNjVhOWRjNjktOGFiOC00YmU4LThiOWMtYTgxYmY3MDI1MDJkIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9',
       demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiNjVhOWRjNjktOGFiOC00YmU4LThiOWMtYTgxYmY3MDI1MDJkIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
     },
     {
@@ -35,15 +32,13 @@ export default function Projects() {
       description: 'A data analysis project analyzing coffee shop sales data using Excel for cleaning and Power BI for interactive dashboard visualization.',
       tags: ['Power BI', 'Excel', 'Data Visualization','Sales Analysis'],
       image: './assets/images/Coffee2.png',
-      githubLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9',
-      demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
+      demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiZDQxMjM4ZjEtOGNkYS00ZTdmLTk5YzktMjdmMWJkZmFjOWYzIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
     },    {
       id: 5,
       title: 'Coffee Shop Sales Dashboard',
       description: 'A data analysis project analyzing coffee shop sales data using Excel for cleaning and Power BI for interactive dashboard visualization.',
       tags: ['Power BI', 'Excel', 'Data Visualization','Sales Analysis'],
       image: './assets/images/Coffee.png',
-      githubLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9',
       demoLink: 'https://app.powerbi.com/view?r=eyJrIjoiNGYyNzAxMzItMTc2ZS00ZmY0LTliMjktYTU4NTllYjYyZDBiIiwidCI6IjFmZmUwYTVhLTllNzYtNDcwZi04YzZiLTA0MzYyMjE3ZWFmMyJ9'
     },
     {
@@ -52,7 +47,6 @@ export default function Projects() {
       description: 'A console-based shopping cart application written in Python featuring item addition, total bill calculation, discounts, and inventory management.',
       tags: ['Python', 'OOP', 'Data Structures','Console Application'],
       image: './assets/images/python.png',
-      githubLink: 'https://github.com/Sama-Saif-Elyazel/Shopping_Cart.git',
       demoLink: 'https://github.com/Sama-Saif-Elyazel/Shopping_Cart.git'
     }
   ]

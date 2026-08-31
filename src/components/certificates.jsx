@@ -12,14 +12,14 @@ export default function Certificates() {
     {
       id: 2,
       title: "Web Development Fundamentals",
-      issuer: "Eng. Ahmed Nady / Creativa Hub Aswan / TIEC",
+      issuer: "Eng. Abdelrahman Hany / Creativa Hub Aswan / TIEC",
       image: "./assets/images/slide3.jpeg",
       description: "Foundational certification covering semantic HTML5 structures and responsive web styling using CSS3."
     },
     {
       id: 3,
       title: "Programming with Python",
-      issuer: "Eng. Abdelrahman Hany / Creativa Hub Aswan / TIEC",
+      issuer: "Eng. Ahmed Nady / Creativa Hub Aswan / TIEC",
       image: "./assets/images/slide2.jpeg",
       description: "Foundational programming principles, algorithms, and object-oriented structure."
     },
@@ -33,16 +33,23 @@ export default function Certificates() {
     {
       id: 5,
       title: "Data Analysis & Visualization",
-      issuer: "Power BI & Excel",
-      image: "./assets/images/slide5.png",
+      issuer: "Dr. Mohamed Mahmoud (Power BI & Excel)",
+      image: "./assets/images/Slide5.png",
       description: "Certification in data transformation, cleaning, and building interactive analytics dashboards."
     },
     {
       id: 6,
-      title: "SQL & Database Administration Training",
+      title: "SQL (Data Analysis & Querying)",
       issuer: "Eng. mohamed Bastawi / Creativa Hub Aswan / TIEC",
-      image: "./assets/images/slide5.png",
+      image: "./assets/images/slide6.png",
       description: "Proficient in writing complex SQL queries using JOINs, Aggregations, Subqueries, and Window Functions to extract, clean, and transform raw data into actionable business insights."
+    },
+    {
+      id: 7,
+      title: "Database Fundamentals",
+      issuer: "Information Technology Institute (ITI - Mahara-Tech)",
+      image: "./assets/images/slide7.png",
+      description: "Certification in relational database core concepts, data modeling, and foundational SQL querying principles."
     },
 
   ]

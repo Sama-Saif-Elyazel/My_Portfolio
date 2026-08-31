@@ -48,7 +48,17 @@ export default function Projects() {
       tags: ['Python', 'OOP', 'Data Structures','Console Application'],
       image: './assets/images/python.png',
       demoLink: 'https://github.com/Sama-Saif-Elyazel/Shopping_Cart.git'
+    },
+    {
+      id: 7,
+      title: 'Library Management System & Analytics',
+      description: 'Designed a relational database schema (ERD) for a library network, established table relations, executed SQL queries to extract key insights, created an analytical dashboard, and presented business findings.',
+      tags: ['SQL Server', 'Database Design', 'ERD','Power BI', 'Data Modeling'],
+      image: './assets/images/Library Database.png',
+      demoLink: 'https://github.com/Sama-Saif-Elyazel/library-database-system',
+      driveLink: 'https://drive.google.com/file/d/1P8JOVju336_nUoTNaDVxT13GZfUTgfCp/view?usp=sharing'
     }
+    
   ]
 
   return (
@@ -112,7 +122,19 @@ export default function Projects() {
                     className='flex-1 text-center py-2 px-3 rounded-xl bg-[#4c0a5e] text-white text-xs font-bold font-[cursive] hover:bg-[#db76ea] hover:text-[#4c0a5e] transition-all duration-300 shadow-md'
                   >
                     View Project
+                  </a> 
+
+                  {project.driveLink && (
+                  <a
+                    href={project.driveLink}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='flex-1 text-center py-2 px-3 rounded-xl bg-[#4c0a5e] text-white text-xs font-bold font-[cursive] hover:bg-[#db76ea] hover:text-[#4c0a5e] transition-all duration-300 shadow-md'
+                  >
+                    Presentation
                   </a>
+                  )}
+
                   {/* <a 
                     href={project.githubLink} 
                     target='_blank' 
